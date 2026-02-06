@@ -1,0 +1,77 @@
+//1 ფუნქცია რომელიც პოულობს მაქსიმალურს
+function getMax(m, n) {
+    if (m > n) {
+        return m;
+    } else if (n > m) {
+        return n;
+    } else {
+        return 0;
+    }
+}
+
+//2 რიცხვების ჯამი
+function sumNumbers(x, y) {
+    return x + y;
+}
+
+//3 სახელის და გვარის ბეჭდვა
+function printMyName() {
+    console.log("nino khutchua");
+}
+
+//4 სრული სახელი და გარეთ ბეჭდვა
+function getFullName(firstname, lastname) {
+    let full = firstname + " " + lastname;
+    return full;
+}
+
+let resultName = getFullName("nino", "khutchua");
+console.log(resultName);
+
+//5 რიცხვების ნამრავლი 1-დან n-მდე
+function multiplyRange(n) {
+    let result = 1;
+    for (let i = 1; i <= n; i++) {
+        result = result * i;
+    }
+    return result;
+}
+
+//6 სტუდენტის ობიექტი
+const student = {
+    firstName: "ნიკოლოზ",
+    lastName: "ხუჭუა",
+    age: 20,
+    scores: [4, 7, 5, 3, 2],
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+// სტუდენტის სახელის ბეჭდვა მეთოდით
+console.log(student.fullName());
+
+//7 ფუნქცია რომელიც ითვლის ქულების ჯამს
+function getSum(marks) {
+    let total = 0;
+    for (let i = 0; i < marks.length; i++) {
+        total = total + marks[i];
+    }
+    return total;
+}
+
+// გამოძახება სტუდენტის ქულებზე
+let finalScore = getSum(student.scores);
+console.log(finalScore);
+
+//8  სტუდენტის სახელის და ასაკის ბეჭდვა
+console.log(student.firstName);
+console.log(student.age);
+
+
+
+
+
+
+
+                        
